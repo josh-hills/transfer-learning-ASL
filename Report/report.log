@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.9.29)  1 APR 2023 20:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.9.29)  11 APR 2023 19:37
 entering extended mode
-**d:/School/4107/Project/Report/report.tex
-(d:/School/4107/Project/Report/report.tex
+**d:/School/4107/Project/transfer-learning-ASL/Report/report.tex
+(d:/School/4107/Project/transfer-learning-ASL/Report/report.tex
 LaTeX2e <2021-06-01> patch level 1
 L3 programming layer <2021-08-27> (C:\Users\josh7\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2021/02/12 v1.4n Standard LaTeX document class
@@ -179,23 +179,57 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 42.
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--48
+Underfull \hbox (badness 10000) in paragraph at lines 39--47
 
  []
 
-[2 <./images/vgg-architechture.jpg>] [3] (report.aux) ) 
+[2 <./images/vgg-architechture.jpg>]
+<images/example_from_dataset.JPG, id=11, 715.92468pt x 728.7225pt>
+File: images/example_from_dataset.JPG Graphic file (type jpg)
+<use images/example_from_dataset.JPG>
+Package pdftex.def Info: images/example_from_dataset.JPG  used on input line 56.
+(pdftex.def)             Requested size: 178.98073pt x 182.18018pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--57
+
+ []
+
+[3 <./images/example_from_dataset.JPG>]
+Underfull \hbox (badness 10000) in paragraph at lines 58--61
+
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 68.
+(C:\Users\josh7\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 75--77
+
+ []
+
+<images/model_plot.png, id=20, 368.37625pt x 517.935pt>
+File: images/model_plot.png Graphic file (type png)
+<use images/model_plot.png>
+Package pdftex.def Info: images/model_plot.png  used on input line 82.
+(pdftex.def)             Requested size: 147.34789pt x 207.17032pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--83
+
+ []
+
+[4 <./images/model_plot.png>] [5] (report.aux) ) 
 Here is how much of TeX's memory you used:
- 2323 strings out of 478927
- 39756 string characters out of 2852535
- 431426 words of memory out of 3000000
- 20170 multiletter control sequences out of 15000+600000
- 413460 words of font info for 47 fonts, out of 8000000 for 9000
+ 2371 strings out of 478927
+ 40816 string characters out of 2852535
+ 430426 words of memory out of 3000000
+ 20208 multiletter control sequences out of 15000+600000
+ 417533 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,8n,81p,310b,225s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,8n,81p,472b,225s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/josh7/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/josh7/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/josh7/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/josh7/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/josh7/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/josh7/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on report.pdf (3 pages, 311702 bytes).
+Output written on report.pdf (5 pages, 445873 bytes).
 PDF statistics:
- 39 PDF objects out of 1000 (max. 8388607)
+ 53 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
