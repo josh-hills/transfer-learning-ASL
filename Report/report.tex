@@ -98,12 +98,54 @@ This is useful when working with lots of classes, as it avoids the need for one-
 The models' performance was evaluated based on its accuracy during training. The model was trained for 25 epochs, using the training dataset and validating its performance on the validation set.
 
 \section*{Results}
+After training our fine-tuned model for 25 epochs, we evaluated its performance on the test dataset.
+The model is able to achieve an accuracy of \%69 on the test dataset, which is actually quite impressive considering our small amount of 30
+images per class and our high amount of classes at 29. It demonstrated a great ability to generalize to unseen data.
+The results indicate that our model understands and classifies the 29 classes in the dataset with a decent accuracy.\\
+\includegraphics*[scale=0.5]{images/loss+acc.png}\\
+First to address this model, we can see that it finishes with a training accuracy of \%82 and a validation accuracy of \%70, it takes my computer about 28 minutes to train
+this model. This far exceeds the time that it would take to train a model that does not use transfer learning. \\
+\includegraphics*[scale=0.5]{images/confusion matrix.png}\\
+This confusion matrix helps us understand how well our model performed on the test dataset, and gives us some ideas how we could improve it.
+For instance, the model is too often predicting class 26 (the "del" symbol), this could be due to an abundance of those characters in the training set, or maybe it is just easily confused about that character 
+specifically, this could all be researched in a deeper look into this specific use case. Overall though, we can see that the model does a good job 
+at predicting the actual label, this can be seen by looking at the diagonal of the confusion matrix. Now, let's talk about poorer models to make transfer learning look better.\\
 
+To show the effectiveness of 
+transfer learning, we also trained a model without using it. This model performed horribly with a testing accuracy of \%6. This is a CNN using the Keras Sequential API, I do not want to spend too much time on the 
+architecture as the performance is abysmal.
+\begin{itemize}
+    \item A 2D convolutional layer with 32 filters, kernel size of (3, 3), ReLU activation, and input shape of (200, 200, 3)
+    \item A 2D max-pooling layer with pool size of (2, 2)
+    \item A 2D convolutional layer with 64 filters, kernel size of (3, 3), and ReLU activation
+    \item A 2D max-pooling layer with pool size of (2, 2)
+    \item A 2D convolutional layer with 128 filters, kernel size of (3, 3), and ReLU activation
+    \item A 2D max-pooling layer with pool size of (2, 2)
+    \item A 2D convolutional layer with 128 filters, kernel size of (3, 3), and ReLU activation
+    \item A 2D max-pooling layer with pool size of (2, 2)
+    \item A flatten layer to convert the feature maps into a 1D tensor
+    \item A dropout layer with a rate of 0.5 to regularize the model and prevent overfitting
+    \item A dense layer with 512 units and ReLU activation
+    \item A dense layer (output layer) with num\_classes output units and a softmax activation function for multi-class classification
+\end{itemize} 
+This custom CNN was then compiled using the Adam optimizer, sparse categorical cross-entropy loss function and was evaluated on accuracy (all the same as our TF model).
+It trained for 25 epochs and had the same training/validation/testing datasets as the fine-tuned VGG16 model.\\
+\includegraphics*[scale=0.5]{images/loss+acc no tf.png}\\
+As we can by see the accuracy really learned nothing, and performs not much better than just guessing classes. Through this we can understand the value transfer leaning brings.
+\\
 
+Before ending this paper, we trained one more model to see the comparison of results, we will take a look at a model who is trained without the use of data augmentation. As a reminder,
+data augmentation is a technique used to artificially expand the training dataset by applying random transformations. To take a look at model used without this critical feature of our model, we trained it identically as 
+to the fine-tuned VGG16 model, except we left out the data augmentation layer.\\
+\includegraphics*[scale=0.5]{images/loss+acc no aug.png}\\
+Through the technique of data augmention, we are able to increase the by \%21. That is going from a test accuracy of \%49 to \%69. It is interesting to note that the training accuracy of the two models are the same, it seems that data augmentation just reduces overfitting.
 
+\section*{Conclusion}
+In this paper, we have investigated the effectiveness of transfer learning using a fine-tuned VGG16 model for the classification of ASL images. We have also compared its performance with a custom CNN architecture that does not rely on transfer learning. Our experiments demonstrated that the fine-tuned VGG16 model achieved satisfactory accuracy on the test dataset, outperforming the baseline custom CNN model.\\
 
+The use of transfer learning, data augmentation, and effective preprocessing techniques played a significant role in improving the model's performance. While the obtained accuracy is promising, there is still room for further improvement by fine-tuning hyperparameters, exploring alternative model architectures, and employing larger datasets.\\
 
-
+In conclusion, our study showcases the potential of transfer learning using pre-trained neural networks for challenging classification tasks, such as ASL image recognition. This research also highlights the importance of data augmentation and proper preprocessing techniques in achieving better generalization to new, unseen data. By building upon these findings, future research can continue to advance the state of the art in ASL recognition and other similar applications.\\
 
 
 % [2] https://deeplearning.cms.waikato.ac.nz/user-guide/class-maps/IMAGENET/

@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1681256254 "d:/School/4107/Project/transfer-learning-ASL/Report/report.tex" "report.pdf" "report" 1681256255
+["pdflatex"] 1681330341 "d:/School/4107/Project/transfer-learning-ASL/Report/report.tex" "report.pdf" "report" 1681330342
   "C:/Users/josh7/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1632923144 9715384 478191b49bfa69848e8ec30385bbcfbe ""
   "C:/Users/josh7/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1680364109 84263 37748407d5370f73ac542d667e1fa0b3 ""
   "C:/Users/josh7/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -50,13 +50,17 @@
   "C:/Users/josh7/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/times.sty" 1585926771 888 8e0e5c8cca7b18e0400f97f5a2b90a99 ""
   "C:/Users/josh7/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/ts1ptm.fd" 1585253778 653 96f56dc5d1ef1fe1121f1cfeec70ee0c ""
   "C:/Users/josh7/AppData/Local/Programs/MiKTeX/tex/latex/setspace/setspace.sty" 1324297677 22913 a27d7908fc6f0385466454a966a316eb ""
-  "d:/School/4107/Project/transfer-learning-ASL/Report/report.tex" 1681256254 10182 4189e45dd6febf49bbb7f609f5146a2d ""
+  "d:/School/4107/Project/transfer-learning-ASL/Report/report.tex" 1681330340 15695 4a10f2fabc02d18bee9b30f6df32a5e3 ""
+  "images/confusion matrix.png" 1681329552 56857 7b00e04daf0e2bda5ab85e716cd0470d ""
   "images/example_from_dataset.JPG" 1681253296 108796 32a7fbaa7d472da64a81149024513092 ""
+  "images/loss+acc no aug.png" 1681255464 66677 60834288f12ca7b03831ffcfc4a375be ""
+  "images/loss+acc no tf.png" 1681328585 67186 792ff1f2f60aee3e116bfe9bc961721f ""
+  "images/loss+acc.png" 1681254257 65735 c1a06e75c3b0ff27157a362bd3c1b40e ""
   "images/model_plot.png" 1681250208 21640 a901e3bd803923297392f5356aa989f2 ""
   "images/vgg-architechture.jpg" 1680363498 246499 302691e4497d50faa45c3cc4061a4169 ""
-  "report.aux" 1681256255 32 2d1df76398b3c48c6419a45a7331db2d "pdflatex"
-  "report.tex" 1681256254 10182 4189e45dd6febf49bbb7f609f5146a2d ""
+  "report.aux" 1681330342 32 1b174032087fb90900fa6203d3bb0a7e "pdflatex"
+  "report.tex" 1681330340 15695 4a10f2fabc02d18bee9b30f6df32a5e3 ""
   (generated)
-  "report.aux"
   "report.log"
+  "report.aux"
   "report.pdf"
